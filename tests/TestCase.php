@@ -1,10 +1,10 @@
 <?php
 
-namespace Archboard\ClassLinkAuth\Tests;
+namespace Archboard\ClassLink\Auth\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Archboard\ClassLinkAuth\ClassLinkAuthServiceProvider;
+use Archboard\ClassLink\Auth\ClassLinkAuthServiceProvider;
 
 class TestCase extends Orchestra
 {

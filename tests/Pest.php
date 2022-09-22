@@ -1,5 +1,5 @@
 <?php
 
-use Archboard\ClassLinkAuth\Tests\TestCase;
+use Archboard\ClassLink\Auth\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

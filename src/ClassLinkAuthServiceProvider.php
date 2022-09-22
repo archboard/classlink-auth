@@ -1,10 +1,10 @@
 <?php
 
-namespace Archboard\ClassLinkAuth;
+namespace Archboard\ClassLink\Auth;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Archboard\ClassLinkAuth\Commands\ClassLinkAuthCommand;
+use Archboard\ClassLink\Auth\Commands\ClassLinkAuthCommand;
 
 class ClassLinkAuthServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +17,6 @@ class ClassLinkAuthServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('classlink-auth')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_classlink-auth_table')
-            ->hasCommand(ClassLinkAuthCommand::class);
+            ->hasConfigFile();
     }
 }
