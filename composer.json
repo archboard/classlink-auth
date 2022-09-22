@@ -1,17 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "archboard/classlink-auth",
+    "description": "An OAuth2 implementation for ClassLink.",
     "keywords": [
-        ":vendor_name",
-        "laravel",
-        ":package_slug"
+        "classlink",
+        "classlink-auth"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/archboard/classlink-auth",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Grant Holle",
+            "email": "hollegrant@gmail.com",
             "role": "Developer"
         }
     ],
@@ -23,25 +22,21 @@
     "require-dev": {
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^6.0",
-        "nunomaduro/larastan": "^2.0.1",
         "orchestra/testbench": "^7.0",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.1",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5",
         "spatie/laravel-ray": "^1.26"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Archboard\\ClassLink\\Auth\\": "src",
+            "Archboard\\ClassLink\\Auth\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Archboard\\ClassLink\\Auth\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Archboard\\ClassLink\\Auth\\ClassLinkAuthServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "ClassLink\\Auth": "Archboard\\ClassLink\\Auth\\Facades"
             }
         }
     },

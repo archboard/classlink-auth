@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Archboard\ClassLinkAuth\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ClassLinkAuthCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'classlink-auth';
 
     public $description = 'My command';
 
